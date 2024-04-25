@@ -1,3 +1,25 @@
-h1 {
-    color: red;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+.gridFraction {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.gridFraction > div {
+    background-color:beige;
+}
+
+.nested {
+    display: grid;
+}
+
+.nested > div {
+    border:black 1px solid;
+    padding: 1em;
 }
